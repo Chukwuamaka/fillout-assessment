@@ -30,18 +30,18 @@ export default function FormContent({ pageId }: { pageId: string }) {
   return (
     <div
       className={cn(
-        "p-2 flex flex-col gap-2 h-full text-center",
-        !pageFormData.length
-          ? "items-center justify-center"
-          : "items-start justify-start"
+        "flex justify-center h-full",
+        !pageFormData.length ? "items-center" : "items-start pt-[10vh]"
       )}
     >
       {!pageFormData.length ? (
         <EmptyFormContent />
       ) : (
-        pageFormData.map((item) => (
-          <Fragment key={item.id}>{renderFormContent(item)}</Fragment>
-        ))
+        <div className="bg-white rounded-lg p-7 min-w-[80%] min-h-[70%] flex flex-col gap-2 justify-start items-center">
+          {pageFormData.map((item) => (
+            <Fragment key={item.id}>{renderFormContent(item)}</Fragment>
+          ))}
+        </div>
       )}
     </div>
   );

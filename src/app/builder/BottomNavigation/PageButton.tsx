@@ -51,7 +51,7 @@ function PageButton({
   text,
   Icon,
   isActive,
-  cursor = "pointer",
+  cursor = "cursor-pointer",
 }: PageButtonProps) {
   const router = useRouter();
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
