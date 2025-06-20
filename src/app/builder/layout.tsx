@@ -3,7 +3,7 @@
 import { PropsWithChildren } from "react";
 import LeftSidebar from "./LeftSidebar";
 import TopNavigation from "./TopNavigation";
-import BottomNavigation from "./BottomNavigation";
+import BottomNavigation from "./BottomNavigation/BottomNavigation";
 import Canvas from "./Canvas";
 
 export default function FormBuilderLayout({ children }: PropsWithChildren) {
