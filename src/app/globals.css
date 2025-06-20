@@ -120,3 +120,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.padding-inline-0 {
+  padding-inline: 0px;
+}
